@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --dark-mode: class;
+}
+
+/* Add this line below the @theme block to ensure the 'dark' variant 
+   is mapped to the '.dark' selector on the html/body tag */
+@variant dark (&:where(.dark, .dark *));
